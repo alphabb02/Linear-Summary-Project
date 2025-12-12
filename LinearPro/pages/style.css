@@ -28,10 +28,23 @@ details {
 }
 
 img {
-  max-width: 100%;
+
+ max-width: 100%;
   opacity: 1;
   animation: fade 0.6s ease-in;
 }
+
+ img.imcenter {
+display:block;
+margin:0 auto;
+ margin-top:60px;
+margin-bottom:10px;
+ max-width: 100%;
+  opacity: 1;
+  animation: fade 0.6s ease-in;
+
+}
+
 
 @keyframes fade {
   from { opacity: 0; }
@@ -110,4 +123,12 @@ h1 {
 .arrow-vertical button:hover {
   background: #4caf50;
   transform: scale(1.08);
+}
+
+
+.top-left-button {
+position : absolute;
+top:10px;
+left:10px;
+z-index: 10;
 }
