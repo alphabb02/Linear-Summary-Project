@@ -219,3 +219,8 @@ z-index: 10;
 .next-btn:hover::before {
   border-left-color: #333;
 }
+
+.center-p {
+text-align:cener;
+  font-weight:bold;
+}
