@@ -148,13 +148,35 @@ z-index: 10;
   }
 }
 .back-btn {
-  background: none;
-  border: none;
+  position: relative;
+  padding: 10px 20px 10px 30px;
+  background-color: #f2f2f2;
   color: #333;
-  font-size: pointer;
+  border: none;
+  font-size: 16px;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.back-btn::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 15px solid #f2f2f2;
 }
 
 .back-btn:hover {
-  color: #000;
+  background-color: #333;
+  color: #fff;
 }
+
+.back-btn:hover::before {
+  border-right-color: #333;
+}
+
+
