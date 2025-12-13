@@ -180,3 +180,42 @@ z-index: 10;
 }
 
 
+.top-right-button {
+position : absolute;
+top:10px;
+right:10px;
+z-index: 10;
+}
+
+.next-btn {
+  position: relative;
+  padding: 10px 20px 10px 30px;
+  background-color: #f2f2f2;
+  color: #333;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.next-btn::before {
+  content: "";
+  position: absolute;
+  right:-15px;
+  top:50%;
+  transform: translatey(-50%) ;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 15px solid #f2f2f2;
+}
+
+.next-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.next-btn:hover::before {
+  border-left-color: #333;
+}
