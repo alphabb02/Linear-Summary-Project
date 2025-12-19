@@ -1,10 +1,16 @@
 body {
-  background: linear-gradient(135deg, #93C572, #c9f7a0);
+  background: linear-gradient(135deg, #0a1a2f, #132f4c, #1b3b5f);
   font-family: "Cairo", sans-serif;
   margin: 0;
   padding: 20px;
   animation: fadeAll 0.7s ease;
+
 }
+details {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
 
 @keyframes fadeAll {
   from { opacity: 0; }
@@ -158,6 +164,6 @@ text-align:center;
   background-color: #038a58;
 }
   .title-p {
-	  color:brown;
+	  color:#e6f1ff;
 	  font-size:23px;
   }
